@@ -11,7 +11,7 @@ cd /tests
 printf '0\n' > /logs/verifier/reward.txt
 printf '{"reward":0}\n' > /logs/verifier/reward.json
 rm -f /logs/verifier/rewardkit.json /logs/verifier/gate-status.json
-timeout --kill-after=10 1800 /opt/conda/bin/python -I /tests/grader.py
+timeout --kill-after=10 3000 /opt/conda/bin/python -I /tests/grader.py
 grader_status=$?
 pkill -KILL -u 10001 2>/dev/null || true
 judge_status=1

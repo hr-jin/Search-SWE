@@ -27,7 +27,7 @@ user = "agentdev"
 network_mode = "public"
 
 [verifier]
-timeout_sec = 3600
+timeout_sec = 5400
 user = "root"
 environment_mode = "separate"
 network_mode = "allowlist"

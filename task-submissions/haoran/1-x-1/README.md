@@ -55,8 +55,8 @@ memory construction and retrieval must run on local computation alone.
 
 The CPU Python 3.12 environment provides 8 CPUs, 8 GiB memory, 8 GiB storage,
 and no GPU. The agent has two hours and the Harbor verifier one hour. Retrieval
-has a combined 60-second budget for a full question set and answering a combined
-600-second budget, with at most two answering API calls per question.
+has a combined 150-second budget for a full question set and answering a combined
+1,800-second budget, with at most two answering API calls per question.
 
 The memory may retain at most 20% of the dialogue text; the verifier measures
 what the memory expands to, so compression does not enlarge that budget. Every
